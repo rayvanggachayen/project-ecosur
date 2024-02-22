@@ -6,17 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">BOOSH</a>
         <nav>
+          <div class="div1">
+            
             <a href="#home" class="active">Home</a>
             <a href="#schedule">Schedule</a>
             <a href="#supportUs">Support Us</a>
-            <a href="#profile">Profile</a>
-        </nav>
+            <!-- <a href="#" onclick="toggleProfile()"></a> -->
+          </div>
+        <div id="profile-dropdown" class="profile-dropdown" style="display: none;">
+          
+            <div class="profile-dropdown">
+                <div onclick="toggle()" class="profile-dropdown-btn">
+                  <div class="profile-img">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+        
+                  <span
+                    >Niki
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
+                </div>
+        
+                <ul class="profile-dropdown-list">
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-user"></i>
+                      Edit Profile
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-sliders"></i>
+                      Settings
+                    </a>
+                  </li>
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-regular fa-circle-question"></i>
+                      Help & Support
+                    </a>
+                  </li>
+                  <hr />
+        
+                  <li class="profile-dropdown-list-item">
+                    <a href="#">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      Log out
+                    </a>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </nav>
     </header>
     <h1>Feedback</h1>
         <form id="feedback-form">
@@ -72,5 +123,12 @@
         </form>
               
     </div>
+    <script src="profile.js"></script>
+    <script>
+        window.onload = function() {
+        var profileDropdown = document.getElementById('profile-dropdown');
+        profileDropdown.style.display = 'block';
+    }
+    </script>    
 </body>
 </html>
