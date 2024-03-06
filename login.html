@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleslog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>LOG IN PAGE</title>
+</head>
+<body>
+ 
+   <div class="container" id="container">
+    <div class="form-container sign-up">
+        <form action="boosh.php" method="POST">
+            <img src="boosh-removebg-preview.png" height="80px" width="80px" style="margin-bottom:20px">
+            <h1>
+                CREATE ACCOUNT
+            </h1>
+            <div>
+                <a href="#" class="BUS-ICON"><i class="fa-brands fa-github"></i></a>
+             </div>
+             <span>User E-mail for registration</span>
+             <input type="text" placeholder="Input your Name" name="Name"> 
+             <input type="email" placeholder="Input your Email" name="Email"> 
+             <input type="password" placeholder="Input your password" name="Password"> 
+             <button type="submit" value="submit" id="submit" name="yaa">SIGN UP</button>
+        </form>       
+    </div>
+    <div class="form-container sign-in">
+        <form action="" >
+            <img src="boosh-removebg-preview.png" height="80px" width="80px" style="margin-bottom:20px">
+            <h1>
+              SIGN IN
+            </h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                
+             </div>
+             <span>User E-mail and Password to Log in</span>    
+             <input type="email" placeholder="Input your Email" name="Email"> 
+             <input type="password" placeholder="Input your password" name="Password"> 
+             <button type="submit" value="submit" name="SignIn">SIGN IN </button>
+        </form>       
+    </div>  
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome!</h1>
+                <p>Enter your account</p>
+                <button class="hidden" name="login" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>hello Guys!</h1>
+                <p>Register if you not have Account</p>
+                <button class="hidden" name="register" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+   
+</body>
+</html>
